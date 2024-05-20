@@ -10,7 +10,7 @@ const Error = () => {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h2">Error...</Typography>
+      <Typography variant="h2">Erreur...</Typography>
     </Box>
   );
 };

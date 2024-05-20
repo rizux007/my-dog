@@ -339,7 +339,7 @@ export const reviews: Reviews[] = [
 ];
 
 export const navItems: Link[] = [
-  { id: 1, text: "Accueil", url: "/" },
+  { id: 1, text: "Accueil", url: "/my-dog" },
   { id: 2, text: "À propos", url: "/about" },
   { id: 3, text: "Produits", url: "/products" },
   { id: 4, text: "Contact", url: "/contacts" },
