@@ -15,7 +15,6 @@ import Mentions from "../components/Mentions";
 const Home = () => {
   return (
     <>
-      {/* <Box sx={{ backgroundColor: "grey.100" }} m={20}> */}
       <Box
         sx={{ backgroundColor: "grey.100" }}
         px={{ xs: 10, sm: 3, md: 20 }}
@@ -104,14 +103,15 @@ const Home = () => {
               </Grid>
             </Grid>
           </Box>
-          <Box
-            my={2}
-            display="flex"
-            mx={20}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Button variant="contained" sx={{ backgroundColor: "#000" }}>
+          <Box textAlign="center" my={2}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#000",
+                minWidth: "200px",
+                whiteSpace: "nowrap",
+              }}
+            >
               <Link
                 to="/products"
                 style={{
@@ -119,7 +119,7 @@ const Home = () => {
                   color: "inherit",
                 }}
               >
-                Découvrez nos races de chiens
+                Découvrez les races de chiens
               </Link>
             </Button>
           </Box>

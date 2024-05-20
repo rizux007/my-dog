@@ -1,9 +1,13 @@
 import { DataGrid } from "@mui/x-data-grid";
 import { columns, rows } from "../utils/constants";
+import { Box, Typography } from "@mui/material";
 
 const Contact = () => {
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <Box sx={{ height: "100vh", width: "100%" }} my={20}>
+      <Typography textAlign="center" my={10} variant="h3">
+        Liste des vendeurs & utilisateurs
+      </Typography>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -15,7 +19,7 @@ const Contact = () => {
         pageSizeOptions={[5, 10]}
         checkboxSelection
       />
-    </div>
+    </Box>
   );
 };
 
